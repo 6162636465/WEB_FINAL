@@ -54,13 +54,17 @@
 
 
     <div id="right-sidebar">
+    <a href="https://www.facebook.com/ucatolicasanpablo/?locale=es_LA" target="_blank">
         <button class="image-button">
             <img src="LogosyPaginas/image3.png" alt="Imagen 3">
         </button>
+    </a>
+    <a href="https://www.instagram.com/ucatolicasanpablo/?hl=es" target="_blank">
         <button class="image-button">
             <img src="LogosyPaginas/image4.png" alt="Imagen 4">
         </button>
-        <!-- Coloca más botones según sea necesario -->
+    </a>
+    <!-- Coloca más botones según sea necesario -->
     </div>
 </body>
 </html>
