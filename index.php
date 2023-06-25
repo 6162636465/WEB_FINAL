@@ -17,12 +17,18 @@
     <div id="center-content">
         <h1>ALÓ PROFETAS?</h1>
         <div id="center-images">
-            <img src="Imagenes/center_image1.png" alt="Imagen central 1">
-            <img src="Imagenes/center_image2.png" alt="Imagen central 2">
-        </div>
-        <div id="center-buttons">
-            <button class="center-button">Reseña de clases</button>
-            <button class="center-button">Lista de profesores</button>
+            <div class="image-container">
+                <img src="Imagenes/center_image1.png" alt="Imagen central 1">
+                <div class="overlay">
+                    <button class="center-button">Reseña de clases</button>
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="Imagenes/center_image2.png" alt="Imagen central 2">
+                <div class="overlay">
+                    <button class="center-button">Lista de profesores</button>
+                </div>
+            </div>
         </div>
     </div>
 

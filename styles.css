@@ -24,7 +24,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start; /* Cambiado de center a flex-start para mover el contenido al inicio */
+    justify-content: flex-start;
 }
 
 #center-content h1 {
@@ -38,22 +38,40 @@ body {
     margin-bottom: 20px;
 }
 
-#center-images img {
+.image-container {
+    position: relative;
     width: 380px;
     height: 300px;
 }
 
-#center-buttons {
-    display: flex;
-    justify-content: space-around;
+.image-container img {
     width: 100%;
-    margin-top: 20px;
+    height: 100%;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Black background with transparency */
+    color: #f1f1f1;
+    width: 100%;
+    transition: .5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .center-button {
     padding: 10px 20px;
     font-size: 16px;
+    background: transparent; /* Hacer el fondo del botón transparente */
+    border: none;
+    cursor: pointer;
+    color: #fff; /* Color Tesxto*/
+    text-shadow: 2px 2px 4px #fff; /* Agrega una sombra de texto blanca */
 }
+
+
 
 .image-button {
     width: 120px;
