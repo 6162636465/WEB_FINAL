@@ -38,40 +38,30 @@ body {
     margin-bottom: 20px;
 }
 
-.image-container {
+#center-images .image-container {
     position: relative;
     width: 380px;
     height: 300px;
 }
 
-.image-container img {
+#center-images .image-container img {
     width: 100%;
     height: 100%;
 }
 
-.overlay {
+#center-images .image-container .center-button {
     position: absolute;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5); /* Black background with transparency */
-    color: #f1f1f1;
-    width: 100%;
-    transition: .5s ease;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.center-button {
+    left: 0;
+    right: 0;
     padding: 10px 20px;
     font-size: 16px;
-    background: transparent; /* Hacer el fondo del botón transparente */
+    background: rgba(0, 0, 0, 0.5); /* Color de fondo con opacidad del 50% */
     border: none;
     cursor: pointer;
-    color: #fff; /* Color Tesxto*/
-    text-shadow: 2px 2px 4px #fff; /* Agrega una sombra de texto blanca */
+    color: #fff;
+    text-shadow: 2px 2px 4px #000; /* Agrega una sombra de texto negra */
 }
-
-
 
 .image-button {
     width: 120px;
@@ -88,4 +78,36 @@ body {
 .image-button img {
     width: 100%;
     height: 100%;
+}
+
+#smaller-center-images {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#smaller-center-images .image-container {
+    position: relative;
+    width: 200px;
+    height: 260px;
+}
+
+#smaller-center-images .image-container img {
+    width: 100%;
+    height: 100%;
+}
+
+#smaller-center-images .image-container .center-button {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px 20px;
+    font-size: 12px;
+    background: rgba(0, 0, 0, 0.5); /* Color de fondo con opacidad del 50% */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-align: center;
 }

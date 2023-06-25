@@ -29,18 +29,29 @@
         <div id="center-images">
             <div class="image-container">
                 <img src="Imagenes/center_image1.png" alt="Imagen central 1">
-                <div class="overlay">
-                    <button class="center-button">Reseña de clases</button>
-                </div>
+                <button class="center-button">Reseña de clases</button>
             </div>
             <div class="image-container">
                 <img src="Imagenes/center_image2.png" alt="Imagen central 2">
-                <div class="overlay">
-                    <button class="center-button">Lista de profesores</button>
-                </div>
+                <button class="center-button">Lista de profesores</button>
+            </div>
+        </div>
+        <div id="smaller-center-images">
+            <div class="image-container">
+                <img src="Imagenes/Gonzalo.png" alt="Imagen central pequeña 1">
+                <button class="center-button">DR.GONZALO MAURICIO</button>
+            </div>
+            <div class="image-container">
+                <img src="Imagenes/Ernesto.png" alt="Imagen central pequeña 2">
+                <button class="center-button">DR.ALEX CUADROS</button>
+            </div>
+            <div class="image-container">
+                <img src="Imagenes/Erick.png" alt="Imagen central pequeña 3">
+                <button class="center-button">DR.ERICK GÓMES NIETO</button>
             </div>
         </div>
     </div>
+
 
     <div id="right-sidebar">
         <button class="image-button">
