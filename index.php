@@ -11,6 +11,16 @@
         <button class="image-button">
             <img src="LogosyPaginas/image2.png" alt="Imagen 2">
         </button>
+        <button class="image-button">
+            <img src="LogosyPaginas/image5.png" alt="Imagen 5">
+        </button>
+        <button class="image-button">
+            <img src="LogosyPaginas/image6.png" alt="Imagen 6">
+        </button>
+        <button class="image-button">
+            <img src="LogosyPaginas/image7.png" alt="Imagen 7">
+        </button>
+
         <!-- Coloca más botones según sea necesario -->
     </div>
 
