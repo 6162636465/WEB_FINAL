@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Web Page</title>
+    <style>
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh
+        }
+
+        .arrow {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 2em;
+            cursor: pointer
+        }
+
+        .title {
+            font-size: 3em
+        }
+
+        .content {
+            display: none;
+            border: 2px solid #000;
+            padding: 20px;
+            margin-top: 20px
+        }
+    </style>
+</head>
+
+<body>
+    <a href='index.php' class='arrow'>←</a>
+    <div class='center'>
+        <h1 class='title'>SEMESTRES</h1>
+        <div>
+            <span>Elige tu semestre: </span>
+            <select id='semester' onchange='changeContent()'>
+                <option value='1'>Semestre 1</option>
+                <option value='2'>Semestre 2</option>
+                <option value='3'>Semestre 3</option>
+                <option value='4'>Semestre 4</option>
+            </select>
+        </div>
+        <div id='content1' class='content'>
+            <h2>Cursos para el Semestre 1</h2>
+            <p><a href='Documentos/examen.pdf' download>Programación de Videojuegos</a></p>
+            <p><a href='Documentos/examen.pdf' download>Estructuras Discretas I</a></p>
+            <p><a href='Documentos/examen.pdf' download>Matematica I</a></p>
+        </div>
+        <div id='content2' class='content'>
+            <h2>Cursos para el Semestre 2</h2>
+            <p><a href='Documentos/examen.pdf' download>Introducción ade Ciencia de la Computación</a></p>
+            <p><a href='Documentos/examen.pdf' download>Ciencia de la Computación</a></p>
+            <p><a href='Documentos/examen.pdf' download>Estructuras Discretas</a></p>
+        </div>
+        <div id='content3' class='content'>
+            <h2>Cursos para el Semestre 3</h2>
+            <p><a href='Documentos/examen.pdf' download>Ciencia de la Computación II</a></p>
+            <p><a href='Documentos/examen.pdf' download>Algebra Abstracta</a></p>
+            <p><a href='Documentos/examen.pdf' download>Cálculo I</a></p>
+        </div>
+        <div id='content4' class='content'>
+            <h2>Cursos para el Semestre 4</h2>
+            <p><a href='Documentos/examen.pdf' download>Cálculo II</a></p>
+            <p><a href='Documentos/examen.pdf' download>Algoritmos y Estructura de Datos</a></p>
+            <p><a href='Documentos/examen.pdf' download>Base de Datos I</a></p>
+        </div>
+    </div>
+    <script>function changeContent() { var semester = document.getElementById('semester').value; var contents = document.getElementsByClassName('content'); for (var i = 0; i < contents.length; i++) { contents[i].style.display = 'none'; } if (semester) { document.getElementById('content' + semester).style.display = 'block'; } } window.onload = function () { changeContent(); }</script>
+</body>
+
+</html>

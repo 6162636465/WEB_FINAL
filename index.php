@@ -14,7 +14,7 @@
         <button class="image-button">
             <img src="LogosyPaginas/image5.png" alt="Imagen 5">
         </button>
-        <button class="image-button">
+        <button class="image-button" onclick="window.location.href='examenes.html'">
             <img src="LogosyPaginas/image6.png" alt="Imagen 6">
         </button>
         <button class="image-button">
