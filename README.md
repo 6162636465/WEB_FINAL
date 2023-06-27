@@ -3,7 +3,7 @@ Presentacion del proyecto final del taller web
 
 ## POR:
 ### -Javier Oswaldo Alvarez Reyes
-### -Paul Supo 
+### -Paúl Pharaf Supo Portugal 
 ### -Fabricio
 ### -Lesel
 
