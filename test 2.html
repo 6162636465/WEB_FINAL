@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mi página</title>
+    <style>        
+        table {
+            margin: 0 auto;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid black;
+        }
+
+        .arrow {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 2em;
+            cursor: pointer
+        }
+    </style>
+    <script>
+        function toggleContenido(semestre) {
+            var contenido = document.getElementById(semestre + "-contenido");
+            contenido.style.display = (contenido.style.display === "none") ? "block" : "none";
+        }
+
+        function volverPaginaPrincipal() {
+            window.location.href = "pagina_principal.html";
+        }
+    </script>
+</head>
+<body>
+    <center><h1>Lista de Profesores</h1></center>
+    <a href='index.php' class='arrow'>←</a>
+    <br>
+    <table>
+        <tr>
+            <th>Profesor</th>
+            <th>Materias</th>
+            <th>Caracter</th>
+            <th>Semestre</th>
+        </tr>
+        <tr>
+            <td rowspan="4">Alvaro Mamani</td>
+            <td>Ciencias de la Computacion I</td>
+            <td>Obligatorio</td>
+            <td>Semestre 1</td>
+        </tr>
+        <tr>
+            <td>Computacion Paralela</td>
+            <td>Obligatorio</td>
+            <td>Semestre 2</td>
+        </tr>
+        
+        <tr>
+            <td>Big Data</td>
+            <td>Obligatorio</td>
+            <td>Semestre 78</td>
+        </tr>
+        <tr>
+            <td>Cloud Computing</td>
+            <td>Obligatorio</td>
+            <td>Semestre 78</td>
+        </tr>
+        
+        <tr>
+            <td rowspan="3">Manuel Loaiza</td>
+            <td>Ciencia de la Computación</td>
+            <td>Obligatorio</td>
+            <td>Semestre 1</td>
+        </tr>
+        <tr>
+            <td>Computacion Grafica</td>
+            <td>Obligatorio</td>
+            <td>Semestre 2</td>
+        </tr>
+        <tr>
+            <td>Interaccion humano-computador</td>
+            <td>Obligatorio</td>
+            <td>Semestre 3</td>
+        </tr>
+        <tr>
+            <td rowspan="4">Julio Santisteban</td>
+            <td>Sistemas Operativos</td>
+            <td>Obligatorio</td>
+            <td>Semestre 1</td>
+        </tr>
+        <tr>
+            <td>Redes y Comunicaciones</td>
+            <td>Obligatorio</td>
+            <td>Semestre 2</td>
+        </tr>
+        <tr>
+            <td>Seguridad Computacional</td>
+            <td>Obligatorio</td>
+            <td>Semestre 2</td>
+        </tr>
+        <tr>
+            <td>Ingles Tecnico Profesional</td>
+            <td>Obligatorio</td>
+            <td>Semestre 10</td>
+        </tr>
+        <tr>
+            <td rowspan="3">Jose Eduardo Ochoa Luna</td>
+            <td>Formación de Empresas de Base Tecnológica I</td>
+            <td>Obligatorio</td>
+            <td>Semestre 2</td>
+        </tr>
+        <tr>
+            <td>Formación de Empresas de Base Tecnológica II</td>
+            <td>Obligatorio</td>
+            <td>Semestre 3</td>
+        </tr>
+        <tr>
+            <td>Topicos Avanzados de Inteligencia Artificial</td>
+            <td>Electivo</td>
+            <td>Semestre 3</td>
+        </tr>
+        <tr>
+            <td rowspan="6">Gustavo Gerardo Delgado Ugarte</td>
+            <td>Ciencias de la Computacion II</td>
+            <td>Obligatorio</td>
+            <td>Semestre 1</td>
+        </tr>
+        <tr>
+            <td>Algoritmos y Estructuras de Datos</td>
+            <td>Obligatorio</td>
+            <td>Semestre 2</td>
+        </tr>
+        <tr>
+            <td>Ingenieria de Software I</td>
+            <td>Obligatorio</td>
+            <td>Semestre 3</td>
+        </tr>
+        <tr>
+            <td>Ingenieria de Software II</td>
+            <td>Obligatorio</td>
+            <td>Semestre 3</td>
+        </tr>
+        <tr>
+            <td>Ingenieria de Software III</td>
+            <td>Obligatorio</td>
+            <td>Semestre 3</td>
+        </tr>
+        <tr>
+            <td>Topicos Avanzados de Ingenieria de Software</td>
+            <td>Electivo</td>
+            <td>Semestre 3</td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -5,7 +5,7 @@
 </head>
 <body>
     <div id="left-sidebar">
-        <button class="image-button">
+        <button class="image-button" onclick="window.location.href='calendario.html'">
             <img src="LogosyPaginas/image1.png" alt="Imagen 1">
         </button>
         <button class="image-button">
@@ -33,23 +33,31 @@
             </div>
             <div class="image-container">
                 <img src="Imagenes/center_image2.png" alt="Imagen central 2">
-                <button class="center-button">Lista de profesores</button>
+                <a href="test 2.html">
+                    <button class="center-button">Lista de profesores</button>
+                </a>
             </div>
         </div>
         <div id="smaller-center-images">
             <div class="image-container">
                 <img src="Imagenes/Gonzalo.png" alt="Imagen central pequeña 1">
-                <button class="center-button">DR.GONZALO MAURICIO</button>
+                <a href="gonzalo.html">
+                    <button class="center-button">DR.GONZALO MAURICIO</button>
+                </a>
             </div>
             <div class="image-container">
                 <img src="Imagenes/Ernesto.png" alt="Imagen central pequeña 2">
-                <button class="center-button">DR.ALEX CUADROS</button>
+                <a href="alex.html">
+                    <button class="center-button">DR.ALEX CUADROS</button>
+                </a>
             </div>
             <div class="image-container">
                 <img src="Imagenes/Erick.png" alt="Imagen central pequeña 3">
-                <button class="center-button">DR.ERICK GÓMES NIETO</button>
+                <a href="erick.html">
+                    <button class="center-button">DR.ERICK GÓMES NIETO</button>
+                </a>
             </div>
-        </div>
+        </div>  
     </div>
 
 

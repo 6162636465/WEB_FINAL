@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Web Page</title>
+    <style>
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh
+        }
+
+        .arrow {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 2em;
+            cursor: pointer
+        }
+
+        .title {
+            font-size: 3em
+        }
+
+        .content {
+            display: none;
+            border: 2px solid #000;
+            padding: 20px;
+            margin-top: 20px
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+          padding-top: 10px;
+          padding-bottom: 20px;
+          padding-left: 30px;
+          padding-right: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <a href='index.php' class='arrow'>←</a>
+    <div class='center'>
+        <h1 class='title'>CALENDARIOS</h1>
+        <div>
+            <span>Elige profesor: </span>
+            <select id='profesor' onchange='changeContent()'>
+                <option value='1'>Gonzalo Mauricio</option>
+                <option value='2'>Alex Cuadros</option>
+                <option value='3'>Erick Gomez Nieto</option>
+            </select>
+        </div>
+        <div id='prof1' class='content'>
+            <h2>Gonzalo Mauricio Fernandez del Carpio</h2>
+            <table class="default">
+                <tr>
+                  <th>Curso</th>
+                  <th>Dia</th>
+                  <th>Hora inicio</th>
+                  <th>Hora fin</th>
+                </tr>
+              </table>
+        </div>
+        <div id='prof2' class='content'>
+            <h2>Alex Cuadros</h2>
+            <table class="default">
+                <tr>
+                  <th>Curso</th>
+                  <th>Dia</th>
+                  <th>Hora inicio</th>
+                  <th>Hora fin</th>
+                </tr>
+                <tr>
+                  <th rowspan="4">Algoritmos y Estructuras de Datos</th>
+                  <td>Lunes</td>
+                  <td>15:15</td>
+                  <td>16:45</td>
+                </tr>
+                <tr>
+                  <td>Martes</td>
+                  <td>15:15</td>
+                  <td>16:45</td>
+                </tr>
+                <tr>
+                    <td>Sabado</td>
+                    <td>10:00</td>
+                    <td>11:30</td>
+                </tr>
+                <tr>
+                  <td>Sabado</td>
+                  <td>11:30</td>
+                  <td>13:00</td>
+              </tr>
+              </table>
+        </div>
+        <div id='prof3' class='content'>
+            <h2>Erick Gomez Nieto</h2>
+            <table class="default">
+                <tr>
+                  <th>Curso</th>
+                  <th>Dia</th>
+                  <th>Hora inicio</th>
+                  <th>Hora fin</th>
+                </tr>
+                <tr>
+                  <th rowspan="3">Tópicos de Computación Gráfica</th>
+                  <td>Lunes</td>
+                  <td>14:30</td>
+                  <td>16:00</td>
+                </tr>
+                <tr>
+                  <td>Martes</td>
+                  <td>15:15</td>
+                  <td>16:45</td>
+                </tr>
+                <tr>
+                    <td>Miercoles</td>
+                    <td>12:15</td>
+                    <td>13:45</td>
+                </tr>
+                <tr>
+                    <th rowspan="4">Estructura de Datos Avanzados</th>
+                    <td>Martes</td>
+                    <td>10:00</td>
+                    <td>11:30</td>
+                  </tr>
+                  <tr>
+                      <td>Miercoles</td>
+                      <td>08:30</td>
+                      <td>10:00</td>
+                  </tr>
+                  <tr>
+                    <td>Jueves</td>
+                    <td>19:45</td>
+                    <td>21:15</td>
+                  </tr>
+                  <tr>
+                    <td>Viernes</td>
+                    <td>19:45</td>
+                    <td>21:15</td>
+                  </tr>
+                  <tr>
+                    <th rowspan="3">Proyecto Final de Carrera III</th>
+                    <td>Sabado</td>
+                    <td>18:15</td>
+                    <td>19:45</td>
+                  </tr>
+                  <tr>
+                    <td>Sabado</td>
+                    <td>19:45</td>
+                    <td>21:15</td>
+                  </tr>
+              </table>
+        </div>
+    </div>
+
+    <script>
+        function changeContent() { 
+            var id = document.getElementById('profesor').value; 
+            var contents = document.getElementsByClassName('content'); 
+            for (var i = 0; i < contents.length; i++) { contents[i].style.display = 'none'; } 
+            if (id) { document.getElementById('prof' + id).style.display = 'block'; } 
+        } 
+            
+            window.onload = function () { changeContent(); }
+        
+    </script>
+</body>
+
+</html>
